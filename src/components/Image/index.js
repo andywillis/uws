@@ -1,7 +1,7 @@
 // Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import { isMobile, getDimensions } from '../../lib/device';
+import { getDimensions } from '../../lib/device';
 
 // Style
 import './style.css';
@@ -19,7 +19,7 @@ const getResponsiveSrc = (x, src) => {
  * @return {jsx} Component
  */
 const Image = ({ src, alt }) => {
-  const {x, y} = getDimensions();
+  const { x } = getDimensions();
   return (
     <img className="Image" src={getResponsiveSrc(x, src)} alt={alt} />
   );
