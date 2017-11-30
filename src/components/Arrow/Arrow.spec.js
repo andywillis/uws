@@ -20,6 +20,6 @@ it('renders without crashing', () => {
         disabled={disabled}
       />
     </div>
-  , div);
+    , div);
 
 });

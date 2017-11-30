@@ -25,6 +25,11 @@ const Arrow = (props) => {
 
 export default Arrow;
 
+Arrow.defaultProps = {
+  location: '',
+  disabled: false
+};
+
 // Function proptypes
 Arrow.propTypes = {
   disabled: PropTypes.bool,
